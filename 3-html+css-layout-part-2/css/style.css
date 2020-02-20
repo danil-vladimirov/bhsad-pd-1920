@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Unica;
+    src: url(../assets/Unica77-Regular.otf);
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    min-height: 100vh;
+}
+
+.one {
+    border: 1px solid black;
+}
+
+.top-left {
+    width: 50%;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Unica;
+}
+
+.title {
+    font-size: 90px;
+    line-height: 108.1%;
+    padding: 35px;
+}
+
+.author {
+    font-size: 24px;
+    line-height: 108.1%;
+    padding: 35px;
+}
+
+.top-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;   
+}
+
+.picture img {
+    width: 100%;
+}
+
+.abstract {
+    font-family: Times;
+    font-size: 24px;
+    line-height: 130.2%;
+    padding: 35px;
+}
+
+.two {
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(66.5% 66.5% at 50% 50%, #14FF00 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.two img {
+    width: 50vw;
+    animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0);
+    } to {
+        transform: rotateY(360deg);
+    }
+}
+
+.three {
+    flex-direction: column;
+    padding: 35px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.person {
+    font-family: Unica;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+}
+
+.answer {
+    width: 70%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+
+.answer .person {
+    color: blue; 
+}
+
+.four {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: red;
+    padding: 35px;
+}
+
+.big-link {
+    font-size: 104px;
+    line-height: 120px;
+    text-align: center;
+    width: 60%;
+    align-self: center;
+}
+
+.about {
+    font-family: Unica;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.float {
+    width: 220px;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    line-height: 31px;
+    position: fixed;
+    bottom: 140px;
+    left: 50px;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .section {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .top-left {
+        width: 100%;
+    }
+    .top-right {
+        width: 100%;
+    }
+    .picture-two img {
+        width: 80vw;
+    }
+    .question {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .text {
+        font-size: 34px;
+        line-height: 39px;
+    }
+    .answer {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .big-link {
+        font-size: 64px;
+        line-height: 74px;
+    }
+    .about {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
